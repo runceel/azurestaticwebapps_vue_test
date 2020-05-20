@@ -19,6 +19,7 @@ jobs:
     - name: Build Azure Functions
       run: |
         cd api
+        npm install
         tsc
     - name: Build And Deploy
       id: builddeploy
